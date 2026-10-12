@@ -1,6 +1,6 @@
 {
   "name": "@tsci/imrishabh18.corne-keyboard",
-  "version": "2.0.31",
+  "version": "2.0.32",
   "private": false,
   "type": "module",
   "author": "imrishabh18",
@@ -12,7 +12,7 @@
   "scripts": {
     "build": "tsci build --site --use-cdn-javascript --preview-images",
     "dev": "tsci dev",
-    "export:assembly": "tsci export panel-assembly.circuit.json --format assembly-step"
+    "export:assembly": "tsci export left-printed-parts.circuit.tsx --format assembly-step && tsci export right-printed-parts.circuit.tsx --format assembly-step"
   },
   "dependencies": {
     "tscircuit": "0.0.2815"
