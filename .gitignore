@@ -1,0 +1,11 @@
+node_modules/
+dist/
+checks/
+.tscircuit/
+bun.lock
+.npmrc
+.env
+.env.*
+.DS_Store
+*.log
+*-assembly.zip

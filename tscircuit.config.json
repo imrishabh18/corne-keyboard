@@ -1,0 +1,18 @@
+{
+  "$schema": "https://cdn.jsdelivr.net/npm/@tscircuit/cli/types/tscircuit.config.schema.json",
+  "mainEntrypoint": "panel-assembly.circuit.json",
+  "includeBoardFiles": [
+    "panel-assembly.circuit.json"
+  ],
+  "buildCommand": "tsci build --site --use-cdn-javascript --preview-images",
+  "alwaysUseLatestTscircuitOnCloud": true,
+  "ignoredFiles": [
+    "dist/**",
+    "checks/**",
+    ".tscircuit/**",
+    "node_modules/**",
+    ".git/**",
+    "bun.lock",
+    ".npmrc"
+  ]
+}
