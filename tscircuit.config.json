@@ -2,7 +2,9 @@
   "$schema": "https://cdn.jsdelivr.net/npm/@tscircuit/cli/types/tscircuit.config.schema.json",
   "mainEntrypoint": "panel.circuit.json",
   "includeBoardFiles": [
-    "panel.circuit.json"
+    "panel.circuit.json",
+    "left-printed-parts.circuit.tsx",
+    "right-printed-parts.circuit.tsx"
   ],
   "buildCommand": "tsci build --site --use-cdn-javascript --preview-images",
   "alwaysUseLatestTscircuitOnCloud": true,

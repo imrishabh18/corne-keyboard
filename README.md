@@ -26,9 +26,9 @@ bun install
 tsci dev
 ```
 
-Open `panel.circuit.json` for the PCB-only panel. Open `left.circuit.tsx` or `right.circuit.tsx` for the respective PCB and enclosure assembly. Run `bun run build` to generate the saved panel preview.
+Open `panel.circuit.json` for the PCB-only panel. Open `left.circuit.tsx` or `right.circuit.tsx` for the respective PCB and enclosure assembly. Run `bun run build` to generate the saved panel preview and both printed-parts export files.
 
-With a CLI or website version supporting separate assembly STEP exports, choose **Assembly STEP (ZIP)** or run:
+With a website version supporting file-specific downloads, open `left-printed-parts.circuit.tsx` or `right-printed-parts.circuit.tsx` in **Files**, then choose **Download → Assembly STEP (ZIP)**. With the CLI, run:
 
 ```sh
 tsci export left-printed-parts.circuit.tsx --format assembly-step
@@ -45,6 +45,6 @@ The rim is 1.2 mm thick. Interior supports and plate ribs support the middle key
 
 ## Cloud build and fabrication
 
-Cloud builds use the bundled tscircuit runtime and build only the saved PCB panel. Enclosures remain in the left/right circuits. Large JavaScript library bundles are unnecessary for this package.
+Cloud builds use the bundled tscircuit runtime and build the saved PCB panel plus the two printed-parts circuits. Each printed-parts circuit contains only its base and plate; the panel contains no enclosure assembly. Large JavaScript library bundles are unnecessary for this package.
 
 The saved PCB geometry and routing are preserved. The editable TSX source currently has framework placement/panel diagnostics and must be reviewed before generating replacement fabrication files. This package cleanup does not constitute a new fabrication sign-off.
