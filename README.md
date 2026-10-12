@@ -2,6 +2,8 @@
 
 A wired Corne Chocolate v4.1 split keyboard made with [tscircuit](https://tscircuit.com/imrishabh18/corne-keyboard), based on [foostan/crkbd](https://github.com/foostan/crkbd). Each half has 21 Choc V1 hot-swap positions, an RP2040, USB-C and a TRRS connector. The printable cases are black with white illustrative keycaps and a flat switch plate.
 
+![Finished Corne split keyboard with black cases and keycaps, connected by a TRRS cable](docs/images/finished-corne-keyboard.jpg)
+
 ## Files
 
 | File | Purpose |
